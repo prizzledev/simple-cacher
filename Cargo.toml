@@ -1,0 +1,47 @@
+[package]
+name = "simple-cacher"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+authors = ["prizzledev"]
+description = "A high-performance, flexible caching library with custom matching capabilities and automatic expiration"
+documentation = "https://docs.rs/simple-cacher"
+homepage = "https://github.com/prizzledev/simple-cacher"
+repository = "https://github.com/prizzledev/simple-cacher"
+readme = "README.md"
+license = "MIT"
+keywords = ["cache", "caching", "memory", "performance", "indexmap"]
+categories = ["caching", "data-structures", "memory-management"]
+exclude = [
+    "/.github/",
+    "/benches/",
+    "/examples/target/",
+    "*.log"
+]
+
+[dependencies]
+indexmap = "2.0"
+
+[dependencies.regex]
+version = "1.10"
+optional = true
+
+[dev-dependencies]
+regex = "1.10"
+
+[features]
+default = []
+regex_support = ["regex"]
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
+
+[[example]]
+name = "regex_matching"
+path = "examples/regex_matching.rs"
+required-features = ["regex_support"]
+
+[[example]]
+name = "file_cache"
+path = "examples/file_cache.rs"
