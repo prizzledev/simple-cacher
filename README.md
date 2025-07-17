@@ -3,7 +3,7 @@
 [![Crates.io](https://img.shields.io/crates/v/simple-cacher.svg)](https://crates.io/crates/simple-cacher)
 [![Documentation](https://docs.rs/simple-cacher/badge.svg)](https://docs.rs/simple-cacher)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://github.com/prizzledev/simple-cacher/workflows/CI/badge.svg)](https://github.com/prizzledev/simple-cacher/actions)
+[![CI](https://github.com/prizzledev/simple-cacher/actions/workflows/rust.yml/badge.svg)](https://github.com/prizzledev/simple-cacher/actions)
 
 A high-performance, flexible caching library for Rust with custom matching capabilities and automatic expiration.
 
