@@ -253,3 +253,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Custom matcher system
 - Size-limited caches with FIFO eviction
 - Comprehensive test coverage
+
+### 0.1.1
+- Added traits `Debug` & `Clone` for `SimpleCacher` & `SimpleCacheObject`

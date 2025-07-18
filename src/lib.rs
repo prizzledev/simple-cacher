@@ -92,6 +92,7 @@ impl std::error::Error for SimpleCacheError {}
 ///     println!("Expired: {}", entry.is_expired());
 /// }
 /// ```
+#[derive(Debug, Clone)]
 pub struct SimpleCacheObject<U> {
     created_at: Instant,
     value: U,
@@ -323,6 +324,7 @@ pub trait Matcher<T> {
 ///
 /// assert_eq!(cache.len(), 1000); // Only newest 1000 entries remain
 /// ```
+#[derive(Debug, Clone)]
 pub struct SimpleCacher<T, U> {
     cache: IndexMap<T, SimpleCacheObject<U>>,
     max_age: Duration,
